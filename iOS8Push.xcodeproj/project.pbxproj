@@ -13,6 +13,9 @@
 		A131F51C1AF8C0350039B965 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A131F51B1AF8C0350039B965 /* Images.xcassets */; };
 		A131F51F1AF8C0350039B965 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A131F51D1AF8C0350039B965 /* LaunchScreen.xib */; };
 		A131F52B1AF8C0350039B965 /* iOS8PushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131F52A1AF8C0350039B965 /* iOS8PushTests.swift */; };
+		A1AF7FCD1AF9C06400F3BE3C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF7FCC1AF9C06400F3BE3C /* ShareViewController.swift */; };
+		A1AF7FCF1AF9C06400F3BE3C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AF7FCE1AF9C06400F3BE3C /* MainInterface.storyboard */; };
+		A1AF7FD21AF9C06400F3BE3C /* WitmobPush.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A1AF7FC81AF9C06400F3BE3C /* WitmobPush.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +26,28 @@
 			remoteGlobalIDString = A131F50E1AF8C0350039B965;
 			remoteInfo = iOS8Push;
 		};
+		A1AF7FD01AF9C06400F3BE3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A131F5071AF8C0350039B965 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1AF7FC71AF9C06400F3BE3C;
+			remoteInfo = WitmobPush;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1AF7FD61AF9C06400F3BE3C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1AF7FD21AF9C06400F3BE3C /* WitmobPush.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A131F50F1AF8C0350039B965 /* iOS8Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS8Push.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +60,10 @@
 		A131F5241AF8C0350039B965 /* iOS8PushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS8PushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A131F5291AF8C0350039B965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A131F52A1AF8C0350039B965 /* iOS8PushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS8PushTests.swift; sourceTree = "<group>"; };
+		A1AF7FC81AF9C06400F3BE3C /* WitmobPush.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WitmobPush.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AF7FCB1AF9C06400F3BE3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1AF7FCC1AF9C06400F3BE3C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		A1AF7FCE1AF9C06400F3BE3C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +81,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1AF7FC51AF9C06400F3BE3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +96,7 @@
 			children = (
 				A131F5111AF8C0350039B965 /* iOS8Push */,
 				A131F5271AF8C0350039B965 /* iOS8PushTests */,
+				A1AF7FC91AF9C06400F3BE3C /* WitmobPush */,
 				A131F5101AF8C0350039B965 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +106,7 @@
 			children = (
 				A131F50F1AF8C0350039B965 /* iOS8Push.app */,
 				A131F5241AF8C0350039B965 /* iOS8PushTests.xctest */,
+				A1AF7FC81AF9C06400F3BE3C /* WitmobPush.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +149,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A1AF7FC91AF9C06400F3BE3C /* WitmobPush */ = {
+			isa = PBXGroup;
+			children = (
+				A1AF7FCC1AF9C06400F3BE3C /* ShareViewController.swift */,
+				A1AF7FCE1AF9C06400F3BE3C /* MainInterface.storyboard */,
+				A1AF7FCA1AF9C06400F3BE3C /* Supporting Files */,
+			);
+			path = WitmobPush;
+			sourceTree = "<group>";
+		};
+		A1AF7FCA1AF9C06400F3BE3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1AF7FCB1AF9C06400F3BE3C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +177,12 @@
 				A131F50B1AF8C0350039B965 /* Sources */,
 				A131F50C1AF8C0350039B965 /* Frameworks */,
 				A131F50D1AF8C0350039B965 /* Resources */,
+				A1AF7FD61AF9C06400F3BE3C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A1AF7FD11AF9C06400F3BE3C /* PBXTargetDependency */,
 			);
 			name = iOS8Push;
 			productName = iOS8Push;
@@ -150,6 +207,23 @@
 			productReference = A131F5241AF8C0350039B965 /* iOS8PushTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A1AF7FC71AF9C06400F3BE3C /* WitmobPush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1AF7FD51AF9C06400F3BE3C /* Build configuration list for PBXNativeTarget "WitmobPush" */;
+			buildPhases = (
+				A1AF7FC41AF9C06400F3BE3C /* Sources */,
+				A1AF7FC51AF9C06400F3BE3C /* Frameworks */,
+				A1AF7FC61AF9C06400F3BE3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WitmobPush;
+			productName = WitmobPush;
+			productReference = A1AF7FC81AF9C06400F3BE3C /* WitmobPush.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +235,14 @@
 				TargetAttributes = {
 					A131F50E1AF8C0350039B965 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = R4L494APAU;
 					};
 					A131F5231AF8C0350039B965 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = A131F50E1AF8C0350039B965;
+					};
+					A1AF7FC71AF9C06400F3BE3C = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -183,6 +261,7 @@
 			targets = (
 				A131F50E1AF8C0350039B965 /* iOS8Push */,
 				A131F5231AF8C0350039B965 /* iOS8PushTests */,
+				A1AF7FC71AF9C06400F3BE3C /* WitmobPush */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +281,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1AF7FC61AF9C06400F3BE3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AF7FCF1AF9C06400F3BE3C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +312,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1AF7FC41AF9C06400F3BE3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AF7FCD1AF9C06400F3BE3C /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +327,11 @@
 			isa = PBXTargetDependency;
 			target = A131F50E1AF8C0350039B965 /* iOS8Push */;
 			targetProxy = A131F5251AF8C0350039B965 /* PBXContainerItemProxy */;
+		};
+		A1AF7FD11AF9C06400F3BE3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1AF7FC71AF9C06400F3BE3C /* WitmobPush */;
+			targetProxy = A1AF7FD01AF9C06400F3BE3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -340,9 +440,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOS8Push/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +453,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOS8Push/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -390,6 +496,30 @@
 			};
 			name = Release;
 		};
+		A1AF7FD31AF9C06400F3BE3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WitmobPush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1AF7FD41AF9C06400F3BE3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WitmobPush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +539,7 @@
 				A131F5301AF8C0350039B965 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A131F5311AF8C0350039B965 /* Build configuration list for PBXNativeTarget "iOS8PushTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +548,16 @@
 				A131F5331AF8C0350039B965 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1AF7FD51AF9C06400F3BE3C /* Build configuration list for PBXNativeTarget "WitmobPush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1AF7FD31AF9C06400F3BE3C /* Debug */,
+				A1AF7FD41AF9C06400F3BE3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
